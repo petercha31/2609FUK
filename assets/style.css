@@ -172,7 +172,8 @@ nav a:hover {
 .time {
   color: var(--coral);
   font-weight: 800;
-  font-size: 13px;
+  font-size: 20px;
+  letter-spacing: -0.02em;
 }
 
 .stop {
@@ -271,19 +272,32 @@ nav a:hover {
 .home-only {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 16px;
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.home-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 16px;
+  width: min(100%, 420px);
+}
+
+.schedule-btns {
+  margin: 28px auto 0;
+  width: min(100%, 420px);
 }
 
 .big-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: min(100%, 420px);
+  width: 100%;
+  max-width: none;
   min-height: 120px;
   padding: 28px 32px;
   border-radius: 22px;
@@ -301,6 +315,16 @@ nav a:hover {
   filter: brightness(1.06);
 }
 
+.big-btn-disabled,
+.big-btn-disabled:hover {
+  background: #d6d0c8;
+  color: #8a847c;
+  filter: none;
+  cursor: not-allowed;
+  box-shadow: none;
+  pointer-events: none;
+}
+
 .map-widget {
   margin-top: 18px;
   height: 280px;
@@ -309,6 +333,19 @@ nav a:hover {
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   background: #e8e4de;
+}
+
+.stay-map {
+  margin-top: 16px;
+  margin-bottom: 0;
+  border-radius: 16px;
+  box-shadow: none;
+}
+
+.stay-addr {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.4;
 }
 
 .map-widget iframe {
@@ -449,9 +486,17 @@ nav a:hover {
   .route {
     gap: 6px;
   }
-}
 
-@media (max-width: 640px) {
+  .big-btn {
+    font-size: 22px;
+    min-height: 96px;
+    max-width: none;
+  }
+
+  .stay-addr {
+    font-size: 18px;
+  }
+
   .hero h1 {
     font-size: 24px;
   }

@@ -3,70 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>항공 · 이스타</title>
+  <title>항공</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="topbar-inner">
-      <a class="brand" href="index.html">2609FUK<small>9/25–27 · 와타나베도리</small></a>
-      <nav>
-        <a href="index.html">개요</a>
-        <a href="day1.html">25</a>
-        <a href="day2.html">26</a>
-        <a href="day3.html">27</a>
-        <a href="ticket.html">JR</a>
-        <a class="active" href="flight.html">항공</a>
-        <a href="stay.html">숙소</a>
-        <a href="food.html">맛집</a>
-        <a href="resto.html">후보</a>
-        <a href="late.html">야식</a>
-        <a href="transport.html">교통</a>
-        <a href="checklist.html">체크</a>
-      </nav>
-    </div>
-  </header>
-
   <main class="wrap">
+    <p class="back"><a href="index.html">← 홈</a></p>
+
     <section class="hero">
-      <div class="kicker">FLIGHT · 3명</div>
-      <h1>25일 세 명 모두 FUK</h1>
-      <p>부산 2명 09:55, 아들 10:15. 27일 아들은 귀국편 아직 없음.</p>
+      <div class="kicker">항공편</div>
+      <h1>부산출발 2 · 인천출발 1</h1>
+      <p>9월 25일(토) 후쿠오카공항 합류.</p>
     </section>
 
-    <section class="card">
-      <div class="tag">확정 · 성인 2</div>
-      <h2>부산 왕복 · 이스타 일반석</h2>
-      <dl class="kv" style="margin-top:12px">
-        <dt>가는 편</dt>
-        <dd>9/25 금 08:55 PUS → 09:55 FUK</dd>
-        <dt>오는 편</dt>
-        <dd>9/27 일 16:55 FUK → 18:05 PUS</dd>
-        <dt>구간</dt>
-        <dd>직항 약 1시간</dd>
+    <section class="card flight-block">
+      <div class="flight-head">
+        <div>
+          <div class="tag">부산 · 성인 2</div>
+        </div>
+        <span class="badge ok-badge">발권완료</span>
+      </div>
+
+      <div class="leg">
+        <div class="leg-label">가는 편 · 9/25 금</div>
+        <div class="route">
+          <div class="city">
+            <strong>08:55</strong>
+            <span>PUS 부산</span>
+          </div>
+          <div class="arrow">→<small>직항 1시간</small></div>
+          <div class="city">
+            <strong>09:55</strong>
+            <span>FUK 후쿠오카</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="leg">
+        <div class="leg-label">오는 편 · 9/27 일</div>
+        <div class="route">
+          <div class="city">
+            <strong>16:55</strong>
+            <span>FUK 후쿠오카</span>
+          </div>
+          <div class="arrow">→<small>직항 1시간 10분</small></div>
+          <div class="city">
+            <strong>18:05</strong>
+            <span>PUS 부산</span>
+          </div>
+        </div>
+      </div>
+
+      <dl class="kv codes">
+        <dt>여행사 예약번호</dt>
+        <dd>롯데관광 · T16003681734</dd>
+        <dt>항공사 예약번호</dt>
+        <dd>GNAYZS</dd>
       </dl>
     </section>
 
-    <section class="card" style="margin-top:14px">
-      <div class="tag">아들 · 편도 가는 편</div>
-      <h2>인천 → 후쿠오카 · 이스타 일반석</h2>
-      <dl class="kv" style="margin-top:12px">
-        <dt>가는 편</dt>
-        <dd>9/25 금 08:45 ICN → 10:15 FUK</dd>
-        <dt>구간</dt>
-        <dd>직항 약 1시간 30분</dd>
-        <dt>여행사</dt>
-        <dd>웹투어 1906858</dd>
-        <dt>항공사 PNR</dt>
-        <dd class="pin" style="font-size:22px">J4L80S</dd>
-        <dt>전화</dt>
-        <dd>02-2222-2525</dd>
-        <dt>오는 편</dt>
-        <dd>미정</dd>
+    <section class="card flight-block">
+      <div class="flight-head">
+        <div>
+          <div class="tag">아들 · 성인 1</div>
+        </div>
+        <span class="badge ok-badge">발권완료</span>
+      </div>
+
+      <div class="leg">
+        <div class="leg-label">가는 편 · 9/25 금</div>
+        <div class="route">
+          <div class="city">
+            <strong>08:45</strong>
+            <span>ICN 인천</span>
+          </div>
+          <div class="arrow">→<small>직항 1시간 30분</small></div>
+          <div class="city">
+            <strong>10:15</strong>
+            <span>FUK 후쿠오카</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="leg">
+        <div class="leg-label">오는 편 · 9/27 일</div>
+        <div class="route">
+          <div class="city">
+            <strong>19:20</strong>
+            <span>FUK 후쿠오카</span>
+          </div>
+          <div class="arrow">→<small>직항 1시간 30분</small></div>
+          <div class="city">
+            <strong>20:50</strong>
+            <span>ICN 인천</span>
+          </div>
+        </div>
+      </div>
+
+      <dl class="kv codes">
+        <dt>여행사 예약번호</dt>
+        <dd>웹투어 · 1906858</dd>
+        <dt>항공사 예약번호</dt>
+        <dd>J4L80S</dd>
       </dl>
     </section>
-
-    <p class="note" style="margin-top:14px">아들 표는 예약됐지만 <strong>결제 전</strong>입니다. 결제시한을 웹투어에서 확인하세요. 예약일 2026.9.20.</p>
   </main>
 </body>
 </html>

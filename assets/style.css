@@ -325,6 +325,16 @@ nav a:hover {
   pointer-events: none;
 }
 
+.receipt {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin-top: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
 .map-widget {
   margin-top: 18px;
   height: 280px;

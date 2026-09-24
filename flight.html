@@ -8,7 +8,7 @@
 </head>
 <body>
   <main class="wrap">
-    <p class="back"><a href="index.html">← 홈으로</a></p>
+    <p class="back"><a id="back-top" href="index.html">← 홈으로</a></p>
 
     <section class="card flight-block">
       <div class="flight-head">
@@ -54,6 +54,11 @@
         <dt>항공사 예약번호</dt>
         <dd>Q8IHFW</dd>
       </dl>
+
+      <div id="eticket" class="eticket" hidden>
+        <p class="meta" style="margin-top:14px">e-티켓 PDF</p>
+        <p><a class="big-btn" style="min-height:72px;font-size:22px;margin-top:10px" href="resource/T16003681734_eticket.pdf">티켓 인보이스</a></p>
+      </div>
     </section>
 
     <section class="card flight-block">
@@ -102,7 +107,23 @@
       </dl>
     </section>
 
-    <p class="back back-bottom"><a href="index.html">← 홈으로</a></p>
+    
+    <p class="back back-bottom"><a id="back-bottom" href="index.html">← 홈으로</a></p>
   </main>
+  <script>
+    (function () {
+      var fromTicket = new URLSearchParams(location.search).get("from") === "ticket";
+      var eticket = document.getElementById("eticket");
+      if (eticket) eticket.hidden = !fromTicket;
+      var href = fromTicket ? "ticket.html" : "index.html";
+      var label = fromTicket ? "← 티켓" : "← 홈으로";
+      ["back-top", "back-bottom"].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        el.href = href;
+        el.textContent = label;
+      });
+    })();
+  </script>
 </body>
 </html>

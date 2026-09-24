@@ -310,9 +310,24 @@ nav a:hover {
   box-shadow: var(--shadow);
 }
 
-.big-btn:hover {
+/* minor big btn */
+
+.minor-big-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: none;
+  min-height: 120px;
+  padding: 28px 32px;
+  border-radius: 22px;
+  background: linear-gradient(145deg, #96c0f7, #a7c2e4);
   color: #fff;
-  filter: brightness(1.06);
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  box-shadow: var(--shadow);
 }
 
 .big-btn-disabled,
